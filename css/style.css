@@ -1,0 +1,215 @@
+*{
+ margin:0;
+ padding:0;
+ box-sizing: border-box;
+ font-family: 'Open Sans', sans-serif;
+}
+
+html, body{
+	height: 100%;
+
+}
+
+header{
+	width: 100%;
+	padding: 10px 2%;
+	background-color: rgb(220,220,220);
+}
+
+.container{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo-1{
+	width: 150px;
+	height: 60px;
+	padding-left: 2%;
+}
+
+.logo-2{
+	width: 150px;
+	height: 60px;
+	padding-right: 2%;
+}
+
+.cover-form{
+	width: 100%;
+}
+
+.container2{
+	background-image: url("../imagens/bg-form.jpg");
+	width: 100%;
+	height: 500px;
+	background-position: center;
+	background-size: cover;
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	align-items: flex-end;
+	flex-direction: column;
+}
+
+.form-container{
+    width: 400px;
+    height: 110%;
+    margin-right: 40px;
+    position: relative;
+    bottom: -10px;
+    background-color: rgba(255,255,255,0.4);
+    box-shadow: 1px 3px 3px 1px rgba(180,180,180,1);
+	-webkit-box-shadow: 1px 3px 3px 1px rgba(180,180,180,1);
+	-moz-box-shadow: 1px 3px 3px 1px rgba(180,180,180,1);
+
+}
+
+.form-container h2{
+	font-size: 18px;
+	font-weight: normal;
+	background-color: rgba(200,200,200,0.5);
+	padding: 30px 15px;
+}
+
+.form-container form{
+	margin-top: 20px;
+}
+
+.form-container form input[type="text"]{
+	width: 90%;
+	height: 40px;
+	margin: 5px 5%;
+	border: 1px solid #ccc;
+	padding-left: 10px;
+	margin-bottom: 20px;
+    line-height: 30px;
+}
+
+.form-container form p{
+	margin-left: 5%;
+	color: #525252;
+}
+
+.botao-enviar{
+	padding-top: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+.form-container form input[type="submit"]{
+	background-color: #033C50;
+	text-transform: uppercase;
+	color: white;
+	width: 100px;
+	height: 45px;
+	cursor: pointer;
+
+}
+
+.obs{
+	margin-top: 15px;
+}
+
+.cover-chamada{
+	width: 100%;
+}
+
+.chamada{
+	width: 100%;
+	margin: 0 auto;
+	max-width: 1200px;
+	padding: 40px 0;
+	background-color: lightblue;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+.chamada h2{
+	padding-bottom: 10px;
+	font-size: 30px;
+	font-weight: normal;
+}
+
+.mosaico{
+	width: 100%;
+}
+
+.container-mosaico{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	height: 300px;
+	display: flex;
+    background-color: #ccc;
+}
+
+.item1{
+	background-size: cover;
+	background-position: center;
+	width: 60%;
+	height: 300px;
+}
+
+.item2{
+	width: 40%;
+	height: auto;
+	padding: 0 40px;
+	background-color: #ccc;
+	align-self: center;
+}
+
+.invertido{
+	flex-direction: row-reverse;
+}
+
+footer{
+	background-color: rgb(120,120,120);
+	max-width: 1200px;
+	margin:0 auto;
+	display: block;
+	text-align: center;
+}
+
+footer img{
+	padding-top: 20px;
+	width: 120px;
+}
+
+@media screen and (max-width: 960px){
+	.container2{
+		height: auto;
+		padding: 40px 0;
+	}
+
+	.form-container{
+		width: 96%;
+		max-width: 400px;
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.container-mosaico{
+		flex-direction: column;
+		height: auto;
+	}
+	.item1{
+		width: 100%;
+	}
+	.item2{
+		width: 100%;
+		padding: 60px;
+	}
+}
+
+@media screen and (max-width: 510px){
+	.container{	
+		flex-direction: column;
+		align-items: center;       
+	}
+
+}
